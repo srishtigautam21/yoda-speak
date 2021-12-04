@@ -3,9 +3,9 @@ var inputText=document.querySelector("#txt-input");
 var outputText=document.querySelector("#output");
 var serverURL="https://api.funtranslations.com/translate/yoda.json"
 
-function geturl(input)
+function geturl(text)
 {
-    return serverURL + "?" + "input=" + input
+    return serverURL + "?" + "text=" + text
 }
 function errorHandler(error)
 {
@@ -15,7 +15,7 @@ function errorHandler(error)
 
 function clickEventHandler()
 {
-    var text=inputText.value
+    var text=inputText.value;
     fetch(geturl(text))
     
     .then(response => response.json())

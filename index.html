@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neogcamp project 4| yoda speak</title>
+    <link href="style.css" rel="stylesheet" />
     <style>
         textarea{
             width: 50%;
@@ -12,14 +13,23 @@
             display:block;
             margin:auto;
             padding:1rem;
-            border:1px solid black;
-
+            border:solid black;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
         }
         #btn-translate{
-            margin:10px auto; 
+            margin:10px auto;
+            /* margin:auto; */
             font-size: 20px;
+            font-style:italic;
             display:block; 
             border-inline-color: green;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
         }
         #output{
             width: 50%;
@@ -28,18 +38,31 @@
             margin:auto;
             padding:1rem;
             border: solid black;
-
-
+            margin-top: 10px;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
         }
-
+        #header{
+            text-align: center;
+            font-size: xx-large;
+        }
     </style>
 </head>
 <body>
-    <h1>Yoda Talk</h1>
+    <h1 id="header">Yoda Talk</h1>
     <textarea id ="txt-input" placeholder="Type you text here to convert it to yoda's language"></textarea>
     <button id="btn-translate">Translate to Yodish</button>
-    <div><p>Your translation will come here:</p></div>
+    <div class="translation">Your translation will come here:</div>
     <div id="output"></div>
+    <div class="about">
+        <h2>About</h2>
+        <p>Yoda often orders sentences as Object-Subject-Verb, split verbs, switches entire phrases 
+            and sometimes uses sentences that are different from his normal syntax! Have fun and may 
+            the force be with you! Yoda is a registered trademark of Disney.</p>
+    </div>
+    
     <script src="yoda.js" type="text/javascript"></script>
 
     
