@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neogcamp project 4| yoda speak</title>
+    <style>
+        textarea{
+            width: 50%;
+            height:20vh;
+            display:block;
+            margin:auto;
+            padding:1rem;
+            border:1px solid black;
+
+        }
+        #btn-translate{
+            margin:10px auto; 
+            font-size: 20px;
+            display:block; 
+            border-inline-color: green;
+        }
+        #output{
+            width: 50%;
+            height:20vh;
+            display:block;
+            margin:auto;
+            padding:1rem;
+            border: solid black;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Yoda Talk</h1>
+    <textarea id ="txt-input" placeholder="Type you text here to convert it to yoda's language"></textarea>
+    <button id="btn-translate">Translate to Yodish</button>
+    <div><p>Your translation will come here:</p></div>
+    <div id="output"></div>
+    <script src="yoda.js" type="text/javascript"></script>
+
+    
+</body>
+</html>
